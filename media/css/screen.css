@@ -1,0 +1,97 @@
+html, body, div, ul, ol, li, p, a, h1, h2, h3, h4, h5 {
+	margin: 0px;
+	padding: 0px;
+}
+html, body, .wrap {
+	height: 100%;
+}
+body {
+    background: url(../img/background.jpg) #fff;
+	color: #1A1A1A;
+	text-decoration: none;
+	line-height: 25px;
+	font-size: 15px;
+	font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', Verdana, sans-serif;
+}
+p {
+	color: #1A1A1A;
+	margin: 0px 0px 25px;
+}
+a {
+	color: #52ac9a;
+	font-style: italic;
+}
+a:hover {
+	color: #52ac9a !important;
+}
+ul, ol {
+	color: #1A1A1A;
+	margin: 0px 0px 25px 25px;
+}
+ul li, ol li {
+	margin: 0px 0px 5px 0px;
+}
+h2 {
+	color: #1A1A1A;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: left;
+}
+h3 {
+    font-size: 20px;
+}
+#header {
+    margin: 0 auto 15px auto;
+    padding: 20px;
+    width: 750px;
+}
+#header span {
+    color: #52ac9a;
+}
+#post-header p {
+    font-size: 14px;
+    font-style: italic;
+    color: #404040;
+}
+#container {    
+    padding-top: 25px;
+    width: 625px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+
+#content {
+    width: 475px;
+    float: left;
+}
+
+#info {
+    float: left;
+    width: 95px;
+    padding: 20px 10px 5px 8px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 300px;
+    background-color: #fff;
+}
+#info p {
+    margin: 0px 0px 15px;
+}
+#info .day {
+    font-size: 65px;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    color: #404040;
+    padding: 20px;
+    margin: 0 0 25px 0;
+    border-top: #404040 solid 1px;
+    border-bottom: #404040 solid 1px;
+}
