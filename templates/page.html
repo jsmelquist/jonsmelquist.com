@@ -3,16 +3,16 @@
 {% block content %}
 	<div id="info">
 		<div class="date">
-			<span class="day">{{ date|datetimeformat('%d') }}</span>
-			<span class="month">{{ date|datetimeformat('%m') }}</span>
-			<span class="year">{{ date|datetimeformat('%Y') }}</span>
+			<span class="day">{{ page.date|datetimeformat('%d') }}</span>
+			<span class="month">{{ page.date|datetimeformat('%m') }}</span>
+			<span class="year">{{ page.date|datetimeformat('%Y') }}</span>
 		</div>
 	</div>
 	<div id="content">
 		<div id="post-header">
-			<h3>{{ title }}</h3>
-			<p>{{ subtitle }}</p>
+			<h3>{{ page.title }}</h3>
+			<p>{{ page.subtitle }}</p>
 		</div>
-		{{ content }}
+		{{ page.content }}
 	</div>
 {% endblock content %}
