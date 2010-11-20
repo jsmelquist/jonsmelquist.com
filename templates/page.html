@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+	<div id="info">
+		<div class="date">
+			<span class="day">{{ date|datetimeformat('%d') }}</span>
+			<span class="month">{{ date|datetimeformat('%m') }}</span>
+			<span class="year">{{ date|datetimeformat('%Y') }}</span>
+		</div>
+	</div>
 	<div id="content">
 		<div id="post-header">
 			<h3>{{ title }}</h3>
 			<p>{{ subtitle }}</p>
 		</div>
 		{{ content }}
-	</div>
-	<div id="info">
-		<div class="date">
-			<p><span class="month">November</span></p>
-			<p><span class="day">18</span></p>
-		</div>
 	</div>
 {% endblock content %}
