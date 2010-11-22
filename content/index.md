@@ -1,4 +1,5 @@
 title: Home
+template: index.html
 subtitle: This is just the home page
 date: 2010-11-16
 

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	{% for page in pages.in_path("posts") %}
+			<div id="info">
+				<div class="date">
+					<span class="day">{{ page.date|datetimeformat('%d') }}</span>
+					<span class="month">{{ page.date|datetimeformat('%m') }}</span>
+					<span class="year">{{ page.date|datetimeformat('%Y') }}</span>
+				</div>
+			</div>
+			<div id="content">
+				<div id="post-header">
+					<h3>{{ page.title }}</h3>
+					<p>{{ page.subtitle }}</p>
+				</div>
+				{{ page.content }}
+			</div>
+	{% endfor %}
+
+{% endblock %}

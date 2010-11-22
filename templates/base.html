@@ -10,9 +10,6 @@
 		<a href="/"><h2>Jon <span>Smelquist</span></h2></a>
 	</div>
 	<div id="container">
-		{% for page in pages.in_path("posts") %}
-				<a href="{{ page.url }}">{{ page.title }}</a>
-		{% endfor %}
 		{% block content %}
 		{% endblock content %}
 	</div>
